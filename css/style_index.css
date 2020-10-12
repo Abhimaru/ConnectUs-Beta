@@ -1,0 +1,580 @@
+/*OUR TEAM*/
+
+.ourteam{
+	background: url(../images/Background02.jpg); 
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-size: 100% 100%;
+    height: 610px;
+}
+
+
+
+/*Contact us*/
+
+.contact-us{
+	background: url(../images/Background01.jpg); 
+	background-size: 100% 100%; 
+	height: 610px;
+}
+
+
+.header{
+	background: black;	
+}
+
+.contact{
+	margin-left: 400px;	
+	margin-right: 400px;
+	padding:20px 50px 10px 50px !important;
+	background: white;	
+}
+
+input{
+	background: transparent !important;
+	border-style: none !important;
+	border-bottom: 1px solid gray !important;
+	border-radius: 0px !important;
+}
+
+textarea{
+	max-height: 100px;
+	min-height: 40px;
+	background: transparent !important;
+	border-style: none !important;
+	border-bottom: 1px solid gray !important;
+	border-radius: 0px !important;
+}
+
+.fa-instagram{
+	font-size: 20px;
+	color: #BF054E;
+}
+.fa-instagram:hover{
+	border-bottom: 1px solid black;
+}
+
+
+
+
+
+/*FOOOTER*/
+
+.p{
+	font-size: 20px;
+	color :#999;
+	line-height: 25px;
+}
+
+.h2,.h3{
+	color: #fff;
+}
+
+.h3{
+	font-size: 40px;
+}
+
+.h2{
+	font-size: 18px;
+}
+
+.footer-top{
+	background: #111;
+	padding: 30px 0px 10px 0px;
+}
+
+.segment-one{
+	padding-left: 50px;
+}
+
+.segment-one .h3{
+	font-family: courgette;
+	color: #fff;
+	letter-spacing: 3px;
+	margin: 10px 0;
+}
+
+.segment-two{
+	padding-left: 400px;
+}
+
+.segment-three .h2{
+	color:#fff;
+	font-family: poppins;
+	text-transform: uppercase;
+}
+
+.segment-two .h2:before{
+	content: '|';
+	color: #c65039;
+	padding-right: 10px;
+}
+
+.segment-two a{
+	background: #494848;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.segment-two a i{
+	font-size: 20px;
+	color: #fff;
+	padding: 10px 12px;
+}
+
+.footer-bottom-text{
+	text-align: center;
+	background: #000;
+	line-height: 50px;
+	margin-bottom: 0px;
+}
+
+
+/*Responsive*/
+
+@media (min-width: 1441px) and (max-width: 2560px){
+	.ourteam{
+		height: 1000px;
+	}
+
+	.contact{
+		margin-left: 770px;	
+		margin-right: 770px;
+		margin-top: -10px;
+		background: white;	
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+	
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 370px;	
+		margin-right: 370px;
+		margin-top: -10px;
+		background: white;	
+	}
+	.ourteam{
+		height: 650px;
+	}
+	.segment-two{
+		padding-left: 400px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1024px){
+		.contact-us{
+			height: 600px;
+		}
+
+		.contact{
+			margin-left: 200px;	
+			margin-right: 200px;
+			margin-top: -10px;
+			background: white;	
+		}
+
+	.ourteam{
+		height: 600px;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 165px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 1200px;
+	}
+	form{
+		margin-top: 100px;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 165px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+	}
+}
+@media (min-width: 575px) and (max-width: 767px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 3620px;
+	}
+	form{
+		margin-top: 100px;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 165px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+	}
+}
+
+
+@media (min-width: 480px) and (max-width: 574px){
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 2820px;
+	}
+	form{
+		margin-top: 100px;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 115px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+	}
+}
+
+@media (min-width: 450px) and (max-width: 479px){
+
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 2100px;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 100px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 460px;
+		width: 360px;
+		margin-left: 32px;
+	}
+}
+
+
+@media (min-width: 425px) and (max-width: 449px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 1900px;
+	}	
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 90px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 400px;
+		width: 300px;
+		margin-left: 50px;
+	}
+}
+
+@media (min-width: 415px) and (max-width: 424px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 2100px;
+	}
+	form{
+		margin-top: 100px;
+		margin-left: 0;
+		padding: 0;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 110px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 450px;
+		width: 350px;
+		margin-left: 50px;
+	}
+}
+
+@media (min-width: 376px) and (max-width: 414px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 2100px;
+	}
+
+	.segment-one{
+		text-align: center;
+	}
+	.segment-two{
+		padding-left: 85px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 450px;
+		width: 350px;
+		margin-left: 15px;
+	}
+
+}
+
+@media (min-width: 361px) and (max-width: 375px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 2100px;
+	}
+
+	.segment-two{
+		padding-left: 55px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 430px;
+		width: 330px;
+		margin-left: 8px;
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 360px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 10px;	
+		margin-right: 10px;
+		margin-top: -10px;
+		padding: 15px !important;
+		background: white;	
+	}
+
+	.ourteam{
+		height: 1770px;
+	}
+
+	.h3{
+		font-size: 33px;
+	}
+
+	.p{
+		font-size: 16px;
+		margin-top: -10px;
+	}
+
+	.segment-two{
+		padding-left: 50px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 360px;
+		width: 260px;
+		margin-left: 15px;
+	}
+}
+
+@media (min-width: 281) and (max-width: 319px){
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 5px;	
+		margin-right: 5px;
+		margin-top: -10px;
+		background: white;	
+		padding: 15px !important;
+	}
+
+	.ourteam{
+		height: 1850px;
+	}
+
+	.segment-two{
+		padding-left: 50px;
+		margin-top: 10px;	
+	}
+
+	.h3{
+		font-size: 30px;
+	}
+
+	.p{
+		font-size: 15px;
+	}
+	.card{
+		margin-top: 25px;
+		height: 470px;
+		width: 270px;
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 280px){
+
+
+	.contact-us{
+		height: 600px;
+	}
+
+	.contact{
+		margin-left: 1px;	
+		margin-right: 0px;
+		margin-top: -10px;
+		background: white;
+		padding: 15px !important;	
+	}
+
+	.ourteam{
+		height: 1650px;
+	}
+
+	.h3{
+		font-size: 29px;
+	}
+	.p{
+		margin-top: -10px;
+		font-size: 14px;
+	}
+	.segment-two{
+		padding-left: 50px;
+		margin-top: 10px;	
+	}
+	.card{
+		margin-top: 25px;
+		height: 330px;
+		width: 230px;
+		margin-left: 11px;
+	}
+}
