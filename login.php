@@ -50,13 +50,13 @@
 					</p>
 					<div class="wrap-input1 m-b-23">
 						<span class="label-input1">Email</span>
-						<input class="input1" type="email" name="email" placeholder="Type your Email" required>
+						<input class="input1" type="email" name="email" placeholder="Type your Email" required value="<?php if(isset($_POST['email'])){echo htmlentities($_POST['email']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input1">
 						<span class="label-input1">Password</span>
-						<input class="input1" type="password" name="password" placeholder="Type your password" required>
+						<input class="input1" type="password" name="password" placeholder="Type your password" required value="<?php if(isset($_POST['password'])){echo htmlentities($_POST['password']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf190;"></span>
 					</div>
 					

@@ -42,32 +42,32 @@
 
 					<div class="wrap-input1 m-b-20">
 						<span class="label-input1">Username</span>
-						<input class="input1" type="text" name="username" placeholder="Type your username" autocomplete="off" required="true" pattern="[A-Za-z_1-9]*" title="Only Alphabets and underscore allowed">
+						<input class="input1" type="text" name="username" placeholder="Type your username" autocomplete="off" required="true" pattern="[A-Za-z_1-9]*" title="Only Alphabets and underscore allowed" value="<?php if(isset($_POST['username'])){echo htmlentities($_POST['username']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input1 m-b-20">
 						<span class="label-input1">Email</span>
-						<input class="input1" type="email" name="email" placeholder="Type your email"  required>
+						<input class="input1" type="email" name="email" placeholder="Type your email"  required value="<?php if(isset($_POST['email'])){echo htmlentities($_POST['email']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf15a;"></span>
 					</div>
 
 					<div class="wrap-input1 m-b-20">
 						<span class="label-input1">Date of birth</span>
 						<input class="input1" type="date" name="date" min="1940-01-01" max="2020-12-31" 
-						placeholder="Enter your date of birth" required>
+						placeholder="Enter your date of birth" required value="<?php if(isset($_POST['date'])){echo htmlentities($_POST['date']);}?>"/>
 						<span class="focus-input1" data-symbol=" &#xf32f;"></span>
 					</div>
 
 					<div class="wrap-input1 m-b-20">
 						<span class="label-input1">Password</span>
-						<input class="input1" type="password" name="password" placeholder="Type your password" minlength="8" required>
+						<input class="input1" type="password" name="password" placeholder="Type your password" minlength="8" required value="<?php if(isset($_POST['password'])){echo htmlentities($_POST['password']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf190;"></span>
 					</div>
 					
 					<div class="wrap-input1">
 						<span class="label-input1">Confirm Password</span>
-						<input class="input1" type="password" name="cpassword" placeholder="Type your password again" minlength="8" required>
+						<input class="input1" type="password" name="cpassword" placeholder="Type your password again" minlength="8" required value="<?php if(isset($_POST['cpassword'])){echo htmlentities($_POST['cpassword']);}?>"/>
 						<span class="focus-input1" data-symbol="&#xf190;"></span>
 					</div>
 
