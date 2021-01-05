@@ -54,7 +54,7 @@
 
 					<div class="wrap-input1 m-b-20">
 						<span class="label-input1">Date of birth</span>
-						<input class="input1" type="date" name="date" min="1940-01-01" max="2020-12-31" 
+						<input class="input1" type="date" name="date" min="1900-01-01" max="2007-12-31" 
 						placeholder="Enter your date of birth" required value="<?php if(isset($_POST['date'])){echo htmlentities($_POST['date']);}?>"/>
 						<span class="focus-input1" data-symbol=" &#xf32f;"></span>
 					</div>
@@ -136,7 +136,7 @@
 									else{
 										if($pass === $cpass){
 
-												$insertquery = "insert into signup(Username, Email, DOB, Password, Token, Status) values('$usrnm','$email','$dob','$h_pass','$token','inactive')";
+												$insertquery = "insert into signup(Username, Email, DOB, Password, Token, Status) values('$usrnm','$email','$dob','$h_pass','$token','inactive','dist/img/avatars/default.png')";
 												$iquery = mysqli_query($con, $insertquery);
 
 												if($iquery){

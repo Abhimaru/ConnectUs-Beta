@@ -35,10 +35,10 @@
         <a class="nav-link" href="signup.php">Signup</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Our team</a>
+        <a class="nav-link" href="#ourteamid">Our team</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" href="#contactusid">Contact Us</a>
       </li>
     </ul>
   </div>
@@ -81,7 +81,7 @@
 
   <!-- OUT TEAM -->
 
-<section class="ourteam">
+<section class="ourteam" id="ourteamid">
 <div class="container-fluid">
 	<h1 class="text-center pt-5">Our Team</h1>
 	<hr class="w-25 mx-auto pt-5">
@@ -132,7 +132,7 @@
 
 <!-- CONTACT US FORM -->
 
-<section class="contact-us">
+<section class="contact-us" id="contactusid">
   
   <div class="container-fluid">
 
