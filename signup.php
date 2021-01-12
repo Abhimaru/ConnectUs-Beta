@@ -136,7 +136,7 @@
 									else{
 										if($pass === $cpass){
 
-												$insertquery = "insert into signup(Username, Email, DOB, Password, Token, Status) values('$usrnm','$email','$dob','$h_pass','$token','inactive','dist/img/avatars/default.png')";
+												$insertquery = "insert into signup(Username, Email, DOB, Password, Token, Status, Picture) values('$usrnm','$email','$dob','$h_pass','$token','inactive','dist/img/avatars/default.png')";
 												$iquery = mysqli_query($con, $insertquery);
 
 												if($iquery){

@@ -207,7 +207,7 @@
     </div>
 </div>
 
-<p class="footer-bottom-text">Copyright @2020 All Right reserved by ConnectUs</p>
+<p class="footer-bottom-text">Copyright @2021 All Right reserved by ConnectUs</p>
 </footer>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

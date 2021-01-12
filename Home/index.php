@@ -267,59 +267,65 @@
 
 		//for delete account
 
-		if (isset($_POST['deletemyaccountbtn'])) 
+		if (isset($_POST['deletemyaccountbtn']))
 		{
 			$selectq = "select * from signup where Username = '$usrnm'";
 			$selectfq = mysqli_query($con,$selectq);
 			$victim = mysqli_fetch_array($selectfq);
-			$deleteaccquery = "delete from signup where Username = '$usrnm'";
-			$deleteaccqueryrun = mysqli_query($con, $deleteaccquery);
-			if($deleteaccqueryrun)
-			{
-				$victim_id = (int)$victim['Id'];
-				$deletepq1 = "delete from notification where Id = '$victim_id' or FriendId = '$victim_id'";
-				$deletefq1 = mysqli_query($con,$deletepq1);
-				$deletepq2 = "delete from contact where Friend_id1 = '$victim_id' or Friend_id2 = '$victim_id'";
-				$deletefq2 = mysqli_query($con,$deletepq2);	
-				$email = $res['Email'];
-				if ($deleteaccqueryrun and $deletefq1 and $deletefq2) 
-				{
+			$victim_id = (int)$victim['Id'];
+			$deletepq1 = "delete from notification where Id = '$victim_id' or FriendId = '$victim_id'";
+			$deletefq1 = mysqli_query($con,$deletepq1);
+			if ($deletefq1) {
+			$deletepq2 = "delete from contact where Friend_id1 = '$victim_id' or Friend_id2 = '$victim_id'";
+			$deletefq2 = mysqli_query($con,$deletepq2);
+			if ($deletefq2) {
+				$deleteaccquery = "delete from signup where Username = '$usrnm'";
+				$deleteaccqueryrun = mysqli_query($con, $deleteaccquery);
+				if ($deleteaccqueryrun) {
+					$email = $res['Email'];
 					$template_file = "../Mails/deleteacc.php";
-
 					$subject = "Delete Account";
-
 					$headers ="MIME-Version: 1.0 " . "\r\n";
 					$headers.="From: connectus1111@gmail.com  " ."\r\n";
 					$headers.="Content-type: text/html; charset=UTF-8". "\r\n";
 					$headers.="X-Priority: 3";
 					$headers.="X-Mailer: smail-PHP ".phpversion()."	". "\r\n";
-
 					$swap_var = array(
 					"{CUSTOM_URL}" => "http://localhost/Connect%20Us%20-%20Beta"
 					);
-
 					if (file_exists($template_file))
-						$body = file_get_contents($template_file);
+					$body = file_get_contents($template_file);
 					else
-						die ("Unable to locate your template file");
-
+					die ("Unable to locate your template file");
 					foreach (array_keys($swap_var) as $key){
 					if (strlen($key) > 2 && trim($swap_var[$key]) != '')
-						$body = str_replace($key, $swap_var[$key], $body);
+					$body = str_replace($key, $swap_var[$key], $body);
 					}
-
-					if (mail($email, $subject, $body, $headers)) 
+					if (mail($email, $subject, $body, $headers))
 					{
-
-						session_destroy();
-					    header("location:../index.php");
-
-
+					session_destroy();
+					header("location:../index.php");
 					} else {
-						echo "Email sending failed...";
+					echo "Email sending failed...";
 					}
-				}
+					}
 			}
+			else{
+			?>
+				<script>
+					alert("Delete Query2 Failed");
+				</script>
+			<?php
+			}
+		}
+		else{
+		?>
+			<script>
+				alert("Delete Query1 Failed");
+			</script>
+		<?php
+		}
+
 		}
 
 		// For set profile picture
